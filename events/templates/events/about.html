@@ -1,0 +1,17 @@
+
+
+{% extends 'events/base.html' %}
+
+{% load static %}
+{% block title %}À propos{% endblock %}
+
+{% block content %}
+<div class="text-center my-5">
+    <h2>À propos de Event Manager</h2>
+    <p class="lead mt-4">
+        Event Manager est votre solution idéale pour organiser et suivre vos événements préférés. 
+        Notre objectif est de simplifier la gestion d'événements pour tout le monde, que ce soit pour des fêtes, des conférences, ou des expositions.
+    </p>
+    <img src="{% static 'img/image.jpg' %}" class="img-fluid rounded-4 shadow-sm mt-4 w-25" alt="Notre équipe">
+</div>
+{% endblock %}

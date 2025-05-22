@@ -1,0 +1,27 @@
+{% extends 'events/base.html' %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center my-5">
+    <div class="col-md-6">
+        <h2 class="text-center">Contactez-nous</h2>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Votre message..."></textarea>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
